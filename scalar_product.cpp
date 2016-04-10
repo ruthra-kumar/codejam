@@ -34,9 +34,9 @@ int main(int argc,char *argv[]){
             cin>>tmp;
             v2.push_back(tmp);
         }
-        sort(v1.begin(),v1.end());
-        sort(v2.begin(),v2.end(),greater<int>());
-        cout<<"Case #"<<Case++<<": "<<scalar(v1,v2)<<'\n';
+        sort(v1.begin(),v1.end());      //normal sort
+        sort(v2.begin(),v2.end(),greater<int>());   //descending sort 
+        cout<<"Case #"<<Case++<<": "<<scalar(v1,v2)<<'\n';  //find the scalar product
 
         v1.clear();
         v2.clear();
