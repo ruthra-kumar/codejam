@@ -1,4 +1,7 @@
-
+/*
+author: ruthra
+lang: C++
+*/
 #include <iostream>
 #include <string>
 #include <algorithm>
