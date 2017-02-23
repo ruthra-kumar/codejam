@@ -19,6 +19,17 @@ bool Odd(int n)
     return n%2;
 }
 
+long long Fact(int n)
+{
+    long long a =   1;
+    for(int i=1;i<=n;i++)
+    {
+        a   *=  i;
+    }
+    
+    return  a;
+}
+
 bool Prime(int Sum)
 {
     //since min is (0+1+2+3+4+5) = 15
@@ -41,7 +52,7 @@ int main()
     int tmp;
     vector<int> num;
     
-    for(;   a   <= 123500; a++)
+    for(;   a   <= 987654; a++)
     {
         unset();
         tmp =   a;
@@ -70,7 +81,10 @@ int main()
             int first   =   num[0];
             int smallest =   *(min_element(num.begin(),num.end()));
             
-            
+            if( Odd(    Fact(first)/Fact(first-smallest)    )    )
+            {
+                cout    <<  a   <<  '\n';
+            }
         }
         
     }
